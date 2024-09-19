@@ -1,0 +1,89 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <title>Pantalla de Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+       .nav-link {
+            font-weight: light;
+            color: #808080;
+       }
+
+        .active {
+            font-weight: bold;
+            color: #000;
+            padding: 8px 16px;
+        }
+
+
+        .container-body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btn-container {
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+        <div class="navbar-collapse" id="navbarNav">
+
+                    <a class="active" href="/">Inicio</a>
+
+                    <a class="nav-link"  href="/tasks">Tareas</a>
+
+                    <a class="nav-link" href="/tasks/create">
+                        Crear Tarea
+                    </a>
+
+        </div>
+    </div>
+</nav>
+<div class="container-body">
+
+    <h1>Bienvenido a la aplicación de gestión de tareas</h1>
+    <a href="/tasks/create">
+        <button class="btn-container">Registrar una nueva tarea</button>
+    </a>
+</div>
+</body>
+</html>
